@@ -8,10 +8,12 @@ Model an Elevator System
 
 1. Each elevator should be able to report what floor it is on, whether it is moving, and what floor it is going to next. It should also report what floors passengers have requested. NOTE: This information is accesible directly from properties:
 
-  elevator.currentFloor;
-  elevator.isMoving;
-  elevator.destinationFloor;
-  elevator.floorRequests;
+    ```
+    elevator.currentFloor;
+    elevator.isMoving;
+    elevator.destinationFloor;
+    elevator.floorRequests;
+    ```
 
 2. The Elevator System should be able to accept a service request from any floor, and select only one elevator to respond to it. The selection algorithm should be reasonable.
 
