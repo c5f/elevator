@@ -29,11 +29,15 @@ Model an Elevator System
 
 6. Each elevator should keep track of how many floors it has travelled over time. Again accessible via properties:
 
+  ```
   elevator.totalFloorsTravelled;
+  ```
 
 7. The Elevator System should keep track of how many service requests it has processed from people wanting an elevator. Same:
 
+  ```
   elevatorSystem.totalServiceRequests;
+  ```
 
 >NOTE: This is the count of the number of service requests from people not in the elevator car when a floor request is made. If we want to update this count to reflect floor requests, we should implement a count on elevators that gets incremented when a floor request is made from inside the elevator, and return the sum of these values as well as the totalServiceRequests value.
 
@@ -44,4 +48,6 @@ Model an Elevator System
 
 10. The Elevator System should function for any number of elevators and have all of the above functionality. See:
 
+    ```
     - (void)addElevator;
+    ```
