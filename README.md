@@ -8,10 +8,10 @@ Model an Elevator System
 
 1. Each elevator should be able to report what floor it is on, whether it is moving, and what floor it is going to next. It should also report what floors passengers have requested. NOTE: This information is accesible directly from properties:
 
-    elevator.currentFloor;
-    elevator.isMoving;
-    elevator.destinationFloor;
-    elevator.floorRequests;
+  elevator.currentFloor;
+  elevator.isMoving;
+  elevator.destinationFloor;
+  elevator.floorRequests;
 
 2. The Elevator System should be able to accept a service request from any floor, and select only one elevator to respond to it. The selection algorithm should be reasonable.
 
@@ -23,16 +23,15 @@ Model an Elevator System
 
 5. Each elevator should be able to deal with both a service request and a floor request at the same time and decide what floor to go to next.
 >NOTE: Because destination is set programatically at the end of a service request or floor request, whichever function finishes first will inevitably update the destination first.
-
 >Both of these functions will update destination accordingly based on direction - that is to say that if we are going up, and a floor or service request is placed above our current destination, then the destination will be updated to the higher floor.
 
 6. Each elevator should keep track of how many floors it has travelled over time. Again accessible via properties:
 
-    elevator.totalFloorsTravelled;
+  elevator.totalFloorsTravelled;
 
 7. The Elevator System should keep track of how many service requests it has processed from people wanting an elevator. Same:
 
-    elevatorSystem.totalServiceRequests;
+  elevatorSystem.totalServiceRequests;
 
 >NOTE: This is the count of the number of service requests from people not in the elevator car when a floor request is made. If we want to update this count to reflect floor requests, we should implement a count on elevators that gets incremented when a floor request is made from inside the elevator, and return the sum of these values as well as the totalServiceRequests value.
 
